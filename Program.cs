@@ -8,7 +8,7 @@ namespace bilibilisubers
     {
         private static string followersbaseUrl = "https://api.bilibili.com/x/relation/followers?vmid={0}";
 
-        private static long vmId = 15834498;
+        private static long vmId = 1;
 
         private static string nameBaseUrl = "https://api.bilibili.com/x/space/acc/info?mid={0}";
 
@@ -26,7 +26,7 @@ namespace bilibilisubers
                 System.Console.WriteLine("       --help: Help");
                 System.Console.WriteLine("       -o [millsecond]: Loop mode");
                 System.Console.WriteLine("       -v: verbose");
-                System.Console.WriteLine("\nGet fowllower number of a specific user");
+                System.Console.WriteLine("\nGet info of a specific user on bilibili");
                 return;
             }
             if (!long.TryParse(args[0], out vmId))
@@ -160,7 +160,7 @@ namespace bilibilisubers
                 }
                 else
                 {
-                    System.Console.WriteLine("获取失败");
+                    System.Console.WriteLine("获取超时");
                 }
                 System.Threading.Thread.Sleep(delaySec);
             }
