@@ -25,6 +25,7 @@ namespace bilibilisubers
                 System.Console.WriteLine("Usage: bilibilisubers [userId]");
                 System.Console.WriteLine("       --help: Help");
                 System.Console.WriteLine("       -o [millsecond]: Loop mode");
+                System.Console.WriteLine("       -v: verbose");
                 System.Console.WriteLine("\nGet fowllower number of a specific user");
                 return;
             }
